@@ -29,7 +29,12 @@ The web server will running in:
 | Method   | URL                                      | Description                              |
 | -------- | ---------------------------------------- | ---------------------------------------- |
 | `POST`   | `/books`                                 | Save book to the server.                 |
-| `GET`    | `/books`                                 | Get and read all books from server.      |
-| `GET`    | `/books/{bookId}`                            | Get and read note by ID.                 |
-| `PUT`    | `/notes/{id}`                            | Edit or update note by ID.               |
-| `DELETE` | `/notes/{id}`                            | Delete note by ID.                       |
+| `GET`    | `/books`                                 | Get and read all books data from server. |
+| `GET`    | `/books/{bookId}`                        | Get and read book data by ID.            |
+| `GET`    | `/books?name="hello"`                    | Get and read all books data with name "hello" in _non-case sensitive_.|
+| `GET`    | `/books?reading="0"`                     | Get and read all books data with `reading` value `false`|
+| `GET`    | `/books?reading="1"`                     | Get and read all books data with `reading` value `true`|
+| `GET`    | `/books?finished="0"`                    | Get and read all books data with `finished` value `false`|
+| `GET`    | `/books?finished="1"`                    | Get and read all books data with `finished` value `true`|
+| `PUT`    | `/notes/{bookId}`                        | Edit or update book data by ID.          |
+| `DELETE` | `/notes/{bookId}`                        | Delete book by ID.                       |
